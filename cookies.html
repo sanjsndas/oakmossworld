@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Cookies Policy | Oak Moss World — Verdant Gardens & Living Landscapes</title>
+    <!-- Google Fonts & Simple Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafff2;
+            color: #1e2f1c;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, .logo, .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+        }
+
+        /* Green Theme Core (matches contact page) */
+        :root {
+            --moss-dark: #1f3b1a;
+            --moss-medium: #2b5e2a;
+            --moss-soft: #4c7a3a;
+            --sage-light: #c5e0b4;
+            --cream: #fef9e6;
+            --highlight: #e6b422;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header & Navigation (identical to contact page) */
+        header {
+            background: rgba(31, 59, 26, 0.96);
+            backdrop-filter: blur(3px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #f1f9e6;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            color: var(--highlight);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #eef5e3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--highlight);
+        }
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid var(--sage-light);
+            padding: 6px 18px;
+            border-radius: 40px;
+            color: #f3ffe6;
+            transition: 0.2s;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .btn-ghost:hover {
+            background: rgba(197, 224, 180, 0.15);
+            border-color: var(--highlight);
+            color: var(--highlight);
+        }
+
+        /* Hero Section (Cookies Policy) */
+        .hero-cookies {
+            background: linear-gradient(107deg, #1c3b1a 0%, #2f6b2a 100%);
+            color: white;
+            padding: 3rem 0 3.5rem;
+        }
+        .hero-cookies h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.75rem;
+        }
+        .hero-cookies p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 720px;
+        }
+
+        /* Section styling */
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #ddecd0;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 70px;
+            height: 4px;
+            background: var(--moss-medium);
+            border-radius: 4px;
+        }
+
+        /* Policy card style */
+        .policy-card {
+            background: white;
+            border-radius: 32px;
+            padding: 2rem 2rem 2rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 12px 28px -12px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+        }
+        .policy-card h2 {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            color: var(--moss-dark);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .policy-card h2 i {
+            color: var(--moss-medium);
+            font-size: 1.6rem;
+        }
+        .policy-card h3 {
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.6rem 0;
+            color: #2a5325;
+        }
+        .policy-card p, .policy-card li {
+            color: #2c3e2a;
+            margin-bottom: 0.75rem;
+        }
+        .policy-card ul, .policy-card ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .policy-card li {
+            margin-bottom: 0.4rem;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            background: #fafef4;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .cookie-table th, .cookie-table td {
+            border: 1px solid #cde2bc;
+            padding: 12px 16px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .cookie-table th {
+            background: #e2f0d6;
+            font-weight: 600;
+            color: #1f3b1a;
+        }
+        .highlight-badge {
+            background: #eef4e5;
+            border-radius: 60px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .consent-bar {
+            background: #fef9e6;
+            border-left: 6px solid var(--highlight);
+            padding: 1.2rem 1.5rem;
+            border-radius: 28px;
+            margin: 2rem 0 0.5rem;
+        }
+        .btn-pref {
+            background: var(--moss-medium);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .btn-pref:hover {
+            background: #144f12;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid var(--moss-medium);
+            color: var(--moss-medium);
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-left: 12px;
+        }
+        .btn-secondary:hover {
+            background: #e3f0da;
+        }
+
+        /* Footer (same as contact) */
+        footer {
+            background: #142010;
+            color: #d0e2bc;
+            padding: 2.5rem 0 2rem;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+        .footer-logo {
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+            color: #cbe5b4;
+        }
+        .footer-address i, .footer-phone i {
+            margin-right: 10px;
+            width: 24px;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            border-top: 1px solid #2a4224;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero-cookies h1 {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .policy-card {
+                padding: 1.5rem;
+            }
+            .cookie-table th, .cookie-table td {
+                padding: 8px 10px;
+                font-size: 0.85rem;
+            }
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #eef3e7;
+            padding: 8px 20px;
+            border-radius: 60px;
+            text-decoration: none;
+            color: var(--moss-dark);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            transition: 0.2s;
+        }
+        .back-link:hover {
+            background: #dde8d0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">Oak Moss <span>World</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html" style="color: #e6b422;">Cookies Policy</a></li>
+            </ul>
+            <div><a href="#" class="btn-ghost">🌱 Green Guide</a></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section for Cookies Policy -->
+    <div class="hero-cookies">
+        <div class="container">
+            <h1>🍪 Cookies & Digital Stewardship</h1>
+            <p>We believe in transparency — just like healthy soil, a healthy web experience starts with clarity. Learn how Oak Moss World uses cookies, pixels, and similar technologies to cultivate a better browsing journey while respecting your privacy.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Brief navigation / consistency link -->
+        <div style="margin: 1.5rem 0 0.5rem;">
+            <a href="contact.html" class="back-link"><i class="fas fa-leaf"></i> Back to Contact & Garden Hub</a>
+        </div>
+
+        <!-- Main cookies policy content -->
+        <section style="padding-top: 1rem;">
+            <div class="policy-card">
+                <h2><i class="fas fa-cookie-bite"></i> Our Use of Cookies</h2>
+                <p><strong>Last updated: March 21, 2026</strong> — At Oak Moss World ("we," "us," or "our"), we use cookies and similar tracking technologies to enhance your experience on our verdant digital platform. This Cookies Policy explains what these technologies are, why we use them, and your rights to control our use. Our commitment to ecological mindfulness extends to your digital footprint.</p>
+                <div class="highlight-badge"><i class="fas fa-seedling"></i> 78,900+ words of gardening wisdom — served with care for your privacy</div>
+            </div>
+
+            <div class="policy-card">
+                <h2><i class="fas fa-info-circle"></i> What Are Cookies?</h2>
+                <p>Cookies are small text files stored on your device (computer, tablet, or mobile) when you visit websites. They help us remember your preferences, understand how you navigate our vast library of plant guides, landscape articles, and organic workshops. Think of them as friendly pollinators — they help things run smoothly while respecting the ecosystem of your data.</p>
+                <p>We use both <strong>first-party cookies</strong> (set by Oak Moss World) and <strong>third-party cookies</strong> (from trusted partners like analytics and video platforms) to improve functionality and content relevance.</p>
+            </div>
+
+            <div class="policy-card">
+                <h2><i class="fas fa-list-ul"></i> Types of Cookies We Use</h2>
+                <p>To make our content (over 124 detailed gardening guides) accessible and personalized, we classify cookies in the following categories:</p>
+                <table class="cookie-table">
+                    <thead>
+                        <tr><th>Cookie Category</th><th>Purpose</th><th>Examples & Duration</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Essential (Strictly Necessary)</strong></td><td>Enable core functionality: page navigation, secure areas, form submissions (like our contact form). Without these, the site cannot operate properly.</td><td>Session cookies, login state, CSRF tokens. Expire after browser close or up to 1 day.</td></tr>
+                        <tr><td><strong>Preference & Functionality</strong></td><td>Remember your choices (language, region, favorite garden topics) to offer a personalized experience.</td><td>"remember_me", preferred content type. Duration: up to 12 months.</td></tr>
+                        <tr><td><strong>Analytics & Performance</strong></td><td>Help us understand how visitors engage with our 78k+ word library — which articles are most loved, how you navigate workshops. We use aggregated data to improve content.</td><td>Google Analytics (anonymized IP), custom event trackers. Duration: up to 24 months.</td></tr>
+                        <tr><td><strong>Marketing & Social Media</strong></td><td>Allow us to measure effectiveness of green campaigns and offer social sharing features. We never sell personal data.</td><td>Social sharing cookies (YouTube, Instagram widgets). Duration: session to persistent.</td></tr>
+                    </tbody>
+                </table>
+                <p><i class="fas fa-hand-holding-heart" style="margin-right: 6px; color: var(--moss-medium);"></i> We do not use cookies for intrusive cross-site advertising. Any third-party tools respect current privacy regulations (GDPR / CCPA / LGPD).</p>
+            </div>
+
+            <div class="policy-card">
+                <h2><i class="fas fa-chart-line"></i> Why We Use Cookies — Our Verdant Philosophy</h2>
+                <ul>
+                    <li><strong>🌿 Enhance Your Journey:</strong> Remember your favorite plant families, reading progress, or saved articles.</li>
+                    <li><strong>📊 Improve Our Content Ecosystem:</strong> Understand which gardening topics (native plants, permaculture, soil health) resonate most.</li>
+                    <li><strong>🌼 Provide Seamless Workshops & Event Registration:</strong> Cookies help us manage availability and prevent duplicate form submissions.</li>
+                    <li><strong>🔒 Maintain Security & Integrity:</strong> Protect against fraudulent activity and keep the Oak Moss community safe.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2><i class="fas fa-sliders-h"></i> Your Control & Consent Choices</h2>
+                <p>You are in the gardener's seat. When you first visit Oak Moss World, you will see a cookie banner that lets you accept, reject, or customize cookie categories (except essential ones). You can modify your preferences at any time through our <strong>Cookie Preferences Center</strong> (accessible via the floating leaf icon or in the footer).</p>
+                <div class="consent-bar">
+                    <i class="fas fa-seedling" style="font-size: 1.6rem; margin-right: 12px; float: left;"></i>
+                    <p style="font-weight: 500;">🍃 Manage your cookie settings anytime — because your digital garden should feel as natural as the outdoors.</p>
+                    <div style="clear: both;"></div>
+                    <button id="openCookiePrefs" class="btn-pref"><i class="fas fa-cookie"></i> Adjust Cookie Preferences</button>
+                    <button id="acceptAllCookies" class="btn-secondary"><i class="fas fa-check"></i> Accept All Cookies</button>
+                </div>
+                <p>Alternatively, most browsers allow you to block or delete cookies through settings. However, disabling essential cookies may impact core functionality like submitting inquiries via the contact form. <a href="contact.html" style="color: var(--moss-medium);">Reach out</a> if you have questions.</p>
+            </div>
+
+            <div class="policy-card">
+                <h2><i class="fas fa-database"></i> Third-Party Services & Embedded Content</h2>
+                <p>Our articles and guides may include embedded videos (YouTube), Instagram plant tours, or maps. These services may set their own cookies. We recommend reviewing their policies:</p>
+                <ul>
+                    <li><i class="fab fa-youtube"></i> YouTube (Google) — <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer">Google Cookie Policy</a></li>
+                    <li><i class="fab fa-instagram"></i> Instagram (Meta) — <a href="https://help.instagram.com/1896641480634370" target="_blank" rel="noopener noreferrer">Instagram Cookie Info</a></li>
+                    <li><i class="fas fa-chart-simple"></i> Google Analytics — anonymized tracking to count visits and understand popular garden content.</li>
+                </ul>
+                <p>We also embed sign-up forms for our "Verdant Collective" newsletter; those are managed with Mailchimp, which uses analytics cookies only after explicit consent.</p>
+            </div>
+
+            <div class="policy-card">
+                <h2><i class="fas fa-clock"></i> Retention & Updates to this Policy</h2>
+                <p>Cookie lifespans vary based on type (session to 2 years). We review this Cookies Policy regularly to align with updated regulations and our evolving garden community. The effective date is shown at the top. If we make significant changes, we'll notify you via website notice or email (if you are subscribed).</p>
+            </div>
+
+            <div class="policy-card">
+                <h2><i class="fas fa-envelope-open-text"></i> Questions? Let's Talk</h2>
+                <p>If you have any doubts about our use of cookies, your data, or wish to withdraw consent, please contact our Data Steward (we call them the "Head of Digital Ecology").</p>
+                <p><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--moss-medium);"></i> <strong>Oak Moss World — Privacy & Cookies Inquiries</strong><br>
+                1420 Evergreen Lane, Meadowvale Valley, CA 93726<br>
+                📧 <a href="mailto:privacy@oakmossworld.com" style="color: #2b5e2a;">privacy@oakmossworld.com</a> &nbsp;|&nbsp; 📞 +1 (559) 778-9423 (ask for digital support)</p>
+                <p>We aim to respond within 5 business days. Your trust is our most valuable perennial.</p>
+            </div>
+
+            <!-- Extra interactive demo: consent simulation (client-side only) -->
+            <div class="policy-card" style="background: #faf8ef;">
+                <h2><i class="fas fa-check-double"></i> Simulated Consent Demo (Interactive Demo)</h2>
+                <p>This area shows how consent management works. Click the buttons below to simulate updating cookie preferences — for demonstration only. In a live environment, your preferences would be stored.</p>
+                <div id="consentStatusMsg" style="background: #e2f0da; padding: 10px 18px; border-radius: 60px; margin: 12px 0; font-weight: 500;">
+                    🍃 Current simulated preference: <span id="statusText">Not set (default: essential only)</span>
+                </div>
+                <div>
+                    <button id="simulateAcceptAll" class="btn-pref" style="background: var(--moss-medium);"><i class="fas fa-check-circle"></i> Simulate Accept All</button>
+                    <button id="simulateRejectNonEssential" class="btn-secondary"><i class="fas fa-ban"></i> Simulate Essential Only</button>
+                </div>
+                <p class="highlight-badge" style="margin-top: 1rem;"><i class="fas fa-info-circle"></i> This demo reflects our commitment to transparency. Real consent management uses secure local storage and respects Do Not Track signals.</p>
+            </div>
+        </section>
+
+        <!-- extra green note: aligns with the 78k+ words theme -->
+        <div style="text-align: center; margin: 1rem 0 3rem;">
+            <hr style="border-color: #cde2bc; width: 80px; margin: 0 auto 1rem;">
+            <p style="font-size: 0.9rem; color: #517a42;"><i class="fas fa-book-open"></i> Oak Moss World digital library: 78,900+ words on regenerative gardening, permaculture, and botanical lore — cultivated with respect for your privacy.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">Oak Moss World 🌱</div>
+            <div class="footer-address">
+                <i class="fas fa-home"></i> 1420 Evergreen Lane, Meadowvale Valley, CA 93726
+            </div>
+            <div class="footer-phone">
+                <i class="fas fa-phone-alt"></i> +1 (559) 778-9423
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Oak Moss World — Cultivating a Greener Tomorrow. All rights reserved. Unique gardening knowledge: 78,900+ words of original content, expert guides, and immersive imagery. This Cookies Policy is part of our commitment to digital sustainability.
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        // Simulated cookie preference demo (non-persistent, just UI feedback)
+        const statusSpan = document.getElementById('statusText');
+        const simulateAcceptBtn = document.getElementById('simulateAcceptAll');
+        const simulateRejectBtn = document.getElementById('simulateRejectNonEssential');
+        const openPrefsBtn = document.getElementById('openCookiePrefs');
+        const acceptAllBtn = document.getElementById('acceptAllCookies');
+        
+        // Set initial status
+        let currentSimPref = 'essential_only';
+        function updateStatusUI() {
+            if (statusSpan) {
+                if (currentSimPref === 'all_accepted') {
+                    statusSpan.innerHTML = '✅ All cookies accepted (analytics, preferences, marketing) — full experience';
+                } else {
+                    statusSpan.innerHTML = '🌿 Essential cookies only — functionality limited to core features';
+                }
+            }
+        }
+        if (simulateAcceptBtn) {
+            simulateAcceptBtn.addEventListener('click', function() {
+                currentSimPref = 'all_accepted';
+                updateStatusUI();
+                // optional flash message
+                const msgDiv = document.getElementById('consentStatusMsg');
+                if (msgDiv) {
+                    msgDiv.style.transition = '0.1s';
+                    msgDiv.style.backgroundColor = '#d4e8c4';
+                    setTimeout(() => { msgDiv.style.backgroundColor = '#e2f0da'; }, 300);
+                }
+                console.log('[Demo] Accept All Cookies simulated');
+            });
+        }
+        if (simulateRejectBtn) {
+            simulateRejectBtn.addEventListener('click', function() {
+                currentSimPref = 'essential_only';
+                updateStatusUI();
+                const msgDiv = document.getElementById('consentStatusMsg');
+                if (msgDiv) {
+                    msgDiv.style.backgroundColor = '#f7f2df';
+                    setTimeout(() => { msgDiv.style.backgroundColor = '#e2f0da'; }, 300);
+                }
+                console.log('[Demo] Essential Only simulated');
+            });
+        }
+        updateStatusUI();
+
+        // Button for "Adjust Cookie Preferences" — opens an alert that simulates preference center
+        if (openPrefsBtn) {
+            openPrefsBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert("🌱 COOKIE PREFERENCE CENTER (demo)\n\nAt Oak Moss World, you can manage categories:\n✅ Essential cookies (always active)\n⚙️ Functional cookies\n📊 Analytics cookies (optional)\n🎯 Marketing cookies (optional)\n\nThis interactive demo shows our commitment. In production, a full preference manager would appear.");
+            });
+        }
+        if (acceptAllCookies) {
+            acceptAllCookies.addEventListener('click', function(e) {
+                e.preventDefault();
+                currentSimPref = 'all_accepted';
+                updateStatusUI();
+                alert("🍪 Thank you! You've accepted all cookies (simulated). We'll remember your preferences for a better browsing experience.");
+            });
+        }
+        
+        // Additional: any existing forms / feedback? optional small easter egg to reinforce policy
+        const footerLinks = document.querySelectorAll('footer a');
+        // just keep consistent branding
+    })();
+</script>
+</body>
+</html>

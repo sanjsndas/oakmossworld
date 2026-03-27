@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Oak Moss World | Terms of Service · Gardening Community Guidelines</title>
+    <!-- Google Fonts & Simple Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafff2;
+            color: #1e2f1c;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, .logo, .page-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+        }
+
+        :root {
+            --moss-dark: #1f3b1a;
+            --moss-medium: #2b5e2a;
+            --moss-soft: #4c7a3a;
+            --sage-light: #c5e0b4;
+            --cream: #fef9e6;
+            --highlight: #e6b422;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header & Navigation (mirror main site) */
+        header {
+            background: rgba(31, 59, 26, 0.96);
+            backdrop-filter: blur(3px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #f1f9e6;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            color: var(--highlight);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #eef5e3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--highlight);
+        }
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid var(--sage-light);
+            padding: 6px 18px;
+            border-radius: 40px;
+            color: #f3ffe6;
+        }
+
+        /* Hero / page header */
+        .legal-hero {
+            background: linear-gradient(107deg, #1c3b1a 0%, #2f6b2a 100%);
+            color: white;
+            padding: 3rem 0 3.5rem;
+        }
+        .page-title {
+            font-size: 2.8rem;
+            margin-bottom: 0.75rem;
+        }
+        .legal-meta {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        /* Main legal content */
+        .legal-content {
+            background: white;
+            border-radius: 2rem;
+            margin: 2rem 0 3rem;
+            padding: 2.5rem;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+        }
+        .legal-content h2 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 0.8rem 0;
+            color: var(--moss-dark);
+            font-weight: 600;
+        }
+        .legal-content h2:first-of-type {
+            margin-top: 0;
+        }
+        .legal-content h3 {
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.5rem;
+            color: #2d5727;
+            font-weight: 600;
+        }
+        .legal-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .legal-content ul, .legal-content ol {
+            margin: 0.8rem 0 1.2rem 1.8rem;
+        }
+        .legal-content li {
+            margin-bottom: 0.4rem;
+        }
+        .legal-card {
+            background: #f9fef4;
+            border-left: 5px solid var(--moss-medium);
+            padding: 1.2rem 1.8rem;
+            border-radius: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .effective-date {
+            font-style: italic;
+            background: #eef4e5;
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+        }
+        hr {
+            margin: 2rem 0;
+            border: 0;
+            height: 1px;
+            background: #ddecd0;
+        }
+        .back-home {
+            margin-top: 2rem;
+            display: inline-block;
+        }
+        .btn-outline-moss {
+            background: transparent;
+            border: 1px solid var(--moss-medium);
+            color: var(--moss-medium);
+            padding: 8px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .btn-outline-moss:hover {
+            background: var(--moss-medium);
+            color: white;
+        }
+        footer {
+            background: #142010;
+            color: #d0e2bc;
+            padding: 2rem 0 1.5rem;
+            margin-top: 1rem;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .footer-logo {
+            font-size: 1.6rem;
+            font-family: 'Playfair Display', serif;
+            color: #cbe5b4;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            border-top: 1px solid #2a4224;
+            padding-top: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .legal-content {
+                padding: 1.5rem;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+        .small-note {
+            font-size: 0.85rem;
+            color: #4f6b48;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">Oak Moss <span>World</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms Of Privacy</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookies Policy</a></li>
+            </ul>
+            <div><a href="#" class="btn-ghost">🌱 Green Guide</a></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Page header with botanical vibe -->
+    <div class="legal-hero">
+        <div class="container">
+            <h1 class="page-title">Terms of Service</h1>
+            <p class="legal-meta"><i class="fas fa-leaf"></i> Grounded in transparency, respect, and the living wisdom of gardens.</p>
+            <div class="effective-date"><i class="far fa-calendar-alt"></i> Effective date: March 21, 2026</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="legal-content">
+            <p><strong>Welcome to Oak Moss World</strong> — a sanctuary for gardeners, horticulturists, and nature lovers. By accessing or using our website (the “Site”), digital library (78,900+ words of gardening knowledge), and related services, you agree to comply with and be bound by the following Terms of Service. Please read them carefully. These terms cultivate a respectful, safe, and inspiring environment for everyone who shares our passion for green living.</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By visiting Oak Moss World (oakmossworld.com) or any associated subdomains, you acknowledge that you have read, understood, and agree to be bound by these Terms, our <a href="privacy.html" style="color: var(--moss-medium);">Privacy Policy</a>, and <a href="cookies.html" style="color: var(--moss-medium);">Cookies Policy</a>. If you do not agree, please refrain from using our services. We reserve the right to update these terms at any time; continued use after changes constitutes acceptance.</p>
+
+            <div class="legal-card">
+                <i class="fas fa-seedling" style="margin-right: 10px; color: var(--moss-medium);"></i> <strong>Our ethos:</strong> We believe gardening is a transformative act. These terms protect the integrity of our content and the community we nurture.
+            </div>
+
+            <h2>2. Intellectual Property & Unique Content</h2>
+            <p>All materials published on Oak Moss World — including but not limited to articles, guides, photographs, illustrations, video content, design elements, and the extensive 78,900+ word gardening encyclopedia — are the exclusive property of Oak Moss World or its content contributors and are protected under international copyright and intellectual property laws. You may not reproduce, distribute, modify, or republish any portion of our content without explicit prior written consent. However, you are welcome to share brief excerpts for personal, non-commercial use, provided you give clear attribution to Oak Moss World and link back to the original content.</p>
+            <p>The compilation of plant profiles, seasonal almanacs, companion planting matrices, and original photography represent years of curated expertise. Any unauthorized scraping, data mining, or commercial use is strictly prohibited.</p>
+
+            <h2>3. Community Guidelines & User Conduct</h2>
+            <p>We cultivate a positive, respectful community. When interacting with our Site — via comments, newsletter subscriptions, or social channels — you agree to:</p>
+            <ul>
+                <li>Refrain from posting offensive, abusive, or discriminatory remarks.</li>
+                <li>Not upload malicious code, spam, or content that infringes third-party rights.</li>
+                <li>Respect fellow gardeners' perspectives and experiences.</li>
+                <li>Engage in constructive discussions about horticulture, ecology, and sustainable living.</li>
+            </ul>
+            <p>Oak Moss World reserves the right to moderate, remove, or block any user-generated content or accounts that violate these standards, without prior notice.</p>
+
+            <h2>4. Subscription & Email Communications</h2>
+            <p>Users may subscribe to “The Verdant Post” newsletter or other optional email updates. By subscribing, you consent to receive periodic emails containing gardening tips, new articles, workshop announcements, and exclusive content. You may unsubscribe at any time using the link provided in each email. We respect your privacy and never sell or rent email addresses to third parties (further details in our Privacy Policy).</p>
+
+            <h2>5. Accuracy of Information & Gardening Advice</h2>
+            <p>Our content is created by experienced horticulturists, writers, and researchers. However, gardening depends on numerous variables: climate, soil conditions, microclimates, and regional factors. The information provided on Oak Moss World is for educational and inspirational purposes only. We do not guarantee specific results, and you assume full responsibility for implementing any techniques, plant selections, or landscaping practices. Always consult local extension services or certified professionals for site-specific guidance. Oak Moss World shall not be liable for any loss, damage, or injury resulting from reliance on information published on our Site.</p>
+
+            <h2>6. Third-Party Links & Affiliate Disclosure</h2>
+            <p>Our Site may contain links to external websites, nurseries, tools, or resources for your convenience. We are not responsible for the content, privacy policies, or practices of third-party sites. In some cases, we may participate in affiliate programs (e.g., gardening tools, books) — if you make a purchase through such links, we may earn a small commission at no extra cost to you, which helps sustain our rich content library. Any affiliate relationship will be disclosed transparently in accordance with applicable regulations.</p>
+
+            <h2>7. Account Registration & Security</h2>
+            <p>Certain features (such as community forums or exclusive downloads) may require account creation. You are responsible for maintaining the confidentiality of your login credentials. Notify us immediately of any unauthorized use of your account. Oak Moss World reserves the right to suspend or terminate accounts that violate our policies.</p>
+
+            <h2>8. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, Oak Moss World, its owners, contributors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of the Site, content, or services, even if advised of the possibility of such damages. Our total liability shall not exceed the amount you paid (if any) to access our services. This limitation applies to claims based on warranty, contract, tort, or any other legal theory.</p>
+
+            <div class="legal-card">
+                <i class="fas fa-hand-holding-heart"></i> <strong>Green commitment:</strong> Our liability limitation ensures we can continue offering free educational resources while maintaining operational integrity.
+            </div>
+
+            <h2>9. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Oak Moss World and its team from any claims, damages, liabilities, costs, or expenses (including reasonable legal fees) arising from your violation of these Terms, misuse of the Site, or infringement of any third-party rights.</p>
+
+            <h2>10. Digital Library & Exclusive Content Access</h2>
+            <p>Our “Deep Dives” section and expanded plant monographs (totaling over 78,900 unique words) are accessible free of charge to all visitors, reflecting our mission to democratize gardening knowledge. We reserve the right to introduce premium content, workshops, or memberships in the future, with clear notice to users. Any paid features will be governed by additional terms presented at the point of purchase.</p>
+
+            <h2>11. Termination & Suspension</h2>
+            <p>We may terminate or restrict your access to the Site, without notice, for conduct that we determine violates these Terms or is harmful to our community. Upon termination, you must cease all use of Oak Moss World content and delete any downloaded materials (if any).</p>
+
+            <h2>12. Privacy & Data Protection</h2>
+            <p>Your privacy is essential. Our <a href="privacy.html" style="color: var(--moss-medium);">Privacy Policy</a> details how we collect, use, and safeguard personal information. By using the Site, you consent to data practices described therein. We comply with GDPR, CCPA, and other applicable privacy frameworks for users worldwide.</p>
+
+            <h2>13. Modification of Terms</h2>
+            <p>Oak Moss World may revise these Terms at any time. Updated versions will be posted on this page with a revised “Effective date.” We encourage you to review this page periodically. Your continued use of the Site after changes constitutes acceptance.</p>
+
+            <h2>14. Governing Law & Dispute Resolution</h2>
+            <p>These Terms shall be governed by the laws of the State of California, without regard to conflict-of-law principles. Any dispute arising out of these Terms or your use of the Site shall be resolved through binding arbitration in Fresno County, California, unless otherwise required by applicable consumer protection laws. Both parties agree to waive any right to a jury trial or class action.</p>
+
+            <h2>15. Contact Information</h2>
+            <p>If you have any questions regarding these Terms, please reach out to our team — we respond like a well-tended garden: with patience and care.</p>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> legal@oakmossworld.com<br>
+            <i class="fas fa-map-marker-alt"></i> <strong>Postal address:</strong> Oak Moss World, Attn: Legal, 1420 Evergreen Lane, Meadowvale Valley, CA 93726<br>
+            <i class="fas fa-phone-alt"></i> <strong>Phone:</strong> +1 (559) 778-9423 (Mon–Fri, 9am–4pm PT)</p>
+
+            <hr>
+
+            <p class="small-note"><i class="fas fa-tree"></i> By continuing to explore Oak Moss World, you honor the ancient covenant between humans and the earth — one rooted in knowledge, respect, and shared growth. Thank you for being part of our verdant community.</p>
+
+            <div class="back-home">
+                <a href="index.html" class="btn-outline-moss"><i class="fas fa-arrow-left"></i> Return to Homepage & Garden Library</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">Oak Moss World 🌱</div>
+            <div class="footer-address">
+                <i class="fas fa-home"></i> 1420 Evergreen Lane, Meadowvale Valley, CA 93726
+            </div>
+            <div class="footer-phone">
+                <i class="fas fa-phone-alt"></i> +1 (559) 778-9423
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Oak Moss World — Cultivating a Greener Tomorrow. All rights reserved. Terms of Service reflect our commitment to integrity and shared ecological wisdom.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
